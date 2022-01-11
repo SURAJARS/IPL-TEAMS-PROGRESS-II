@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IPL TEAMS PROGRESS</title>
+    
+</head>
+
+  
+  <body>
+    <div class="wrapper">
+      <div class="title-text">
+        <div class="title login">
+IPL TEAMs 2020<br></div>
+<div class="title signup">
+IPL TEAM 2020</div>
+</div>
+<div class="form-container">
+        <div class="slide-controls">
+          <input type="radio" name="slide" id="login" checked>
+          <input type="radio" name="slide" id="signup">
+          <label for="login" class="slide login">WIN STATUS</label>
+          <label for="signup" class="slide signup">LOST STATUS</label>
+          <div class="slider-tab">
+</div>
+</div>
+<div class="form-inner">
+          <form action="#" class="login">
+            <div class="skill-bars">
+    <div class="bar">
+      <div class="info">
+        <span>CSK</span>
+      </div>
+      <div class="progress-line csk">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>RCB</span>
+      </div>
+      <div class="progress-line rcb">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>SRH</span>
+      </div>
+      <div class="progress-line srh">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>MI</span>
+      </div>
+      <div class="progress-line mi">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>RR</span>
+      </div>
+      <div class="progress-line rr">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>KKR</span>
+      </div>
+      <div class="progress-line kkr">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>KXIP</span>
+      </div>
+      <div class="progress-line kxip">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>DC</span>
+      </div>
+      <div class="progress-line dc">
+        <span><br>match played 2</span>
+      </div>
+    </div>
+  </div>
+            
+
+
+</form>
+<form action="#" class="signup" autocomplete="on">
+   <div class="skill-bars">
+    <div class="bar">
+      <div class="info">
+        <span>CSK</span>
+      </div>
+      <div class="progress-line csk1">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>RCB</span>
+      </div>
+      <div class="progress-line rcb1">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>SRH</span>
+      </div>
+      <div class="progress-line srh1">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>MI</span>
+      </div>
+      <div class="progress-line mi1">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>RR</span>
+      </div>
+      <div class="progress-line rr1">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>KKR</span>
+      </div>
+      <div class="progress-line kkr1">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>KXIP</span>
+      </div>
+      <div class="progress-line kxip1">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>DC</span>
+      </div>
+      <div class="progress-line dc1">
+        <span><br>match played 2</span>
+      </div>
+    </div>
+  </div>
+            
+
+            
+            </div>
+</form>
+</div>
+</div>
+</div>
+<script>
+      const loginText = document.querySelector(".title-text .login");
+      const loginForm = document.querySelector("form.login");
+      const loginBtn = document.querySelector("label.login");
+      const signupBtn = document.querySelector("label.signup");
+      const signupLink = document.querySelector("form .signup-link a");
+    function numbersOnly(input){
+       var regex=/[^0-9]/g;
+        input.value=input.value.replace(regex, "");
+      }
+      signupBtn.onclick = (()=>{
+        loginForm.style.marginLeft = "-50%";
+        loginText.style.marginLeft = "-50%";
+      });
+      loginBtn.onclick = (()=>{
+        loginForm.style.marginLeft = "0%";
+        loginText.style.marginLeft = "0%";
+      });
+      signupLink.onclick = (()=>{
+        signupBtn.click();
+        return false;
+      });
+  function lettersOnly(input){
+       var regex = /[^a-z]/gi;
+        input.value = input.value.replace(regex, "");
+      }
+    </script>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: -webkit-linear-gradient(left, #FFA500, #FFA500);
+}
+::selection{
+  background: #FFA500;
+  color: #fff;
+}
+.wrapper{
+  overflow: hidden;
+  max-width: 600px;
+  background: #fff;
+  padding: 3px;
+  border-radius: 5px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+}
+.wrapper .title-text{
+  display: flex;
+  width: 300%;
+  
+  
+}
+
+.wrapper .title{
+  width: 50%;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: left;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.wrapper .slide-controls{
+  position: relative;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  margin: 30px 0 10px 0;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+.slide-controls .slide{
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.6s ease;
+}
+.slide-controls label.signup{
+  color: #000;
+}
+.slide-controls .slider-tab{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  z-index: 0;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(left, #FFA500, #FFA500);
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+input[type="radio"]{
+  display: none;
+}
+#signup:checked ~ .slider-tab{
+  left: 50%;
+}
+#signup:checked ~ label.signup{
+  color: #fff;
+  cursor: default;
+  user-select: none;
+  left:50%;
+}
+#signup:checked ~ label.login{
+  color: #000;
+  right: 50%;
+}
+#login:checked ~ label.signup{
+  color: #000;
+}
+#login:checked ~ label.login{
+  cursor: default;
+  user-select: none;
+  left:50%;
+}
+.wrapper .form-container{
+  width: 100%;
+  overflow: hidden;
+}
+.form-container .form-inner{
+  display: flex;
+  width: 200%;
+}
+.form-container .form-inner form{
+  width: 200%;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.form-inner form .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+.form-inner form .field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  border-bottom-width: 2px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+.form-inner form .field input:focus{
+  border-color: #fc83bb;
+   
+}
+.form-inner form .field input::placeholder{
+  color: #999;
+  transition: all 0.3s ease;
+}
+form .field input:focus::placeholder{
+  color: #b3b3b3;
+}
+.form-inner form .pass-link{
+  margin-top: 5px;
+}
+.form-inner form .signup-link{
+  text-align: center;
+  margin-top: 30px;
+}
+.form-inner form .pass-link a,
+.form-inner form .signup-link a{
+  color: #FFA500;
+  text-decoration: none;
+}
+.form-inner form .pass-link a:hover,
+.form-inner form .signup-link a:hover{
+  text-decoration: underline;
+}
+form .btn{
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+form .btn .btn-layer{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: -webkit-linear-gradient(right, #FFA500, #FFA500, #FFA500, #FFA500);
+  border-radius: 5px;
+  transition: all 0.4s ease;;
+}
+form .btn:hover .btn-layer{
+  left: 0;
+}
+form .btn input[type="submit"]{
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  padding-left: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+  
+    
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: #6665ee;
+}
+::selection{
+  color: #fff;
+  background: #6665ee;
+}
+.skill-bars{
+  padding: 25px 30px;
+  width: 300px;
+  background: #fff;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+.skill-bars .bar{
+  margin: 20px 0;
+}
+.skill-bars .bar:first-child{
+  margin-top: 0px;
+}
+.skill-bars .bar .info{
+  margin-bottom: 5px;
+}
+.skill-bars .bar .info span{
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+  100%{
+    opacity: 1;
+  }
+}
+.skill-bars .bar .progress-line{
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+              0 1px rgba(255,255,255,0.8);
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.bar .progress-line.csk span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: -webkit-linear-gradient(left,#F9CD05,#F9CD05,#F15C19,#00ADEF,#1D418C);
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+  .bar .progress-line.rcb span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: -webkit-linear-gradient(left,#2B2A29,#D1AB3E,#EC1C24);
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+  .bar .progress-line.srh span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: 	 	-webkit-linear-gradient(left,#FF822A,#FF822A,#000000);
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+   .bar .progress-line.mi span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: 	-webkit-linear-gradient(left,#00ADEF,#D1AB3E);
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+   .bar .progress-line.dc span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: 	-webkit-linear-gradient(left,#2561ae,#2561ae,#282968,#d71921);
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+   .bar .progress-line.kkr span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: 	-webkit-linear-gradient(left,#B3A123,#2E0854);
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+   .bar .progress-line.rr span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: 	-webkit-linear-gradient(left,#004BA0,#ff1493);
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+   .bar .progress-line.kxip span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: 	 -webkit-linear-gradient(left,#ED1B24,#ED1B24,#A7A9AC,#DCDDDF,#F9F9F9);
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+      .bar .progress-line.csk1 span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: -webkit-linear-gradient(left,#F9CD05,#F9CD05,#F15C19,#00ADEF,#1D418C);
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+  .bar .progress-line.rcb1 span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: -webkit-linear-gradient(left,#2B2A29,#D1AB3E,#EC1C24);
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+  .bar .progress-line.srh1 span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: 	 	-webkit-linear-gradient(left,#FF822A,#FF822A,#000000);
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+   .bar .progress-line.mi1 span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: 	-webkit-linear-gradient(left,#00ADEF,#D1AB3E);
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+   .bar .progress-line.dc1 span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: 	-webkit-linear-gradient(left,#2561ae,#2561ae,#282968,#d71921);
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+   .bar .progress-line.kkr1 span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: 	-webkit-linear-gradient(left,#B3A123,#2E0854);
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+   .bar .progress-line.rr1 span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: 	-webkit-linear-gradient(left,#004BA0,#ff1493);
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+   .bar .progress-line.kxip1 span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: 	 -webkit-linear-gradient(left,#ED1B24,#ED1B24,#A7A9AC,#DCDDDF,#F9F9F9);
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+  	
+.bar .progress-line.csk span{
+  width: 66.6%;
+  color:#FFFF00;
+}
+.bar .progress-line.rcb span{
+  width: 50%;
+}
+.bar .progress-line.srh span{
+  width: 0%;
+}
+.bar .progress-line.dc span{
+  width: 100%;
+}
+.bar .progress-line.mi span{
+  width: 50%;
+}
+ .bar .progress-line.rr span{
+   width:100%
+  }
+  .bar .progress-line.kkr span{
+   width:50%
+  }
+  .bar .progress-line.kxip span{
+   width:50%
+  }
+      .bar .progress-line.csk1 span{
+  width: 33.3%;
+  color:#FFFF00;
+}
+.bar .progress-line.rcb1 span{
+  width: 50%;
+}
+.bar .progress-line.srh1 span{
+  width: 100%;
+}
+.bar .progress-line.dc1 span{
+  width: 0%;
+}
+.bar .progress-line.mi1 span{
+  width: 50%;
+}
+ .bar .progress-line.rr1 span{
+   width:0%
+  }
+  .bar .progress-line.kkr1 span{
+   width:50%
+  }
+  .bar .progress-line.kxip1 span{
+   width:50%
+  }
+.progress-line span::before{
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after{
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: #000;
+  color: #FFFF00;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100%{
+    opacity: 1;
+  }
+}
+.progress-line.csk span::after{
+  content: "66.6%";
+  color:#FFFF00;
+ /* background:#FFFF00;*/
+}
+.progress-line.rcb span::after{
+  content: "50%";
+}
+.progress-line.srh span::after{
+  content: "0%";
+}
+.progress-line.dc span::after{
+  content: "100%";
+}
+.progress-line.mi span::after{
+  content: "50%";
+}
+  .progress-line.rr span::after{
+    content: "100%";
+  }
+   .progress-line.kkr span::after{
+    content: "50%";
+  }
+   .progress-line.kxip span::after{
+    content: "50%";
+  }
+      .progress-line.csk1 span::after{
+  content: "33.3%";
+  color:#FFFF00;
+ /* background:#FFFF00;*/
+}
+.progress-line.rcb1 span::after{
+  content: "50%";
+}
+.progress-line.srh1 span::after{
+  content: "100%";
+}
+.progress-line.dc1 span::after{
+  content: "0%";
+}
+.progress-line.mi1 span::after{
+  content: "50%";
+}
+  .progress-line.rr1 span::after{
+    content: "0%";
+  }
+   .progress-line.kkr1 span::after{
+    content: "50%";
+  }
+   .progress-line.kxip1 span::after{
+    content: "50%";
+  }
+  
+  
+  </style>
+</body>
+</html>
